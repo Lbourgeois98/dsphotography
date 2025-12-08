@@ -147,4 +147,69 @@
             <div class="form-field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" required>
-            </d
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+            <div class="form-field">
+              <label for="session-type">Type of Session</label>
+              <select id="session-type" name="session-type">
+                <option>Portraits</option>
+                <option>Couples</option>
+                <option>Family</option>
+                <option>Events</option>
+                <option>Creative</option>
+                <option>Photo Booth</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="date">Preferred Date(s)</label>
+              <input id="date" name="date" type="text" placeholder="e.g. June 15 or any weekend in July">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field full-width">
+              <label for="message">Message / Details</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your vision…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn primary">Send Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Prefer to reach out directly? I’d love to hear from you.</p>
+        </div>
+        <div class="contact-details">
+          <!-- Replace with your real info -->
+          <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
+          <p><strong>Instagram:</strong> <a href="#" target="_blank">@yourhandle</a></p>
+          <p><strong>Location:</strong> Your City, State</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Danyell Sedrick's Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

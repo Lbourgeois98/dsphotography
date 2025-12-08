@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Photography – Danyell Sedrick’s Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">Danyell Sedrick’s Photography</a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="photobooth.html">Photo Booth</a>
+      <a href="book-photography.html" class="active">Book Photography</a>
+      <a href="book-photobooth.html">Book Photo Booth</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section section-center">
+  <h1>Book a Photography Session</h1>
+  <p>Tell me about your session and I’ll follow up with details, pricing, and availability.</p>
+
+  <form action="https://formspree.io/f/PHOTOGRAPHY_PLACEHOLDER" method="POST" class="form">
+    <input name="name" placeholder="Your Name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="phone" placeholder="Phone (optional)">
+    <select name="session-type" required>
+      <option value="">Session Type</option>
+      <option>Graduation</option>
+      <option>Family</option>
+      <option>Creative</option>
+      <option>Wedding</option>
+    </select>
+    <input name="preferred-date" placeholder="Preferred Date(s)">
+    <textarea name="message" placeholder="Tell me about your vision…" rows="5"></textarea>
+    <button type="submit" class="btn">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Danyell Sedrick’s Photography. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

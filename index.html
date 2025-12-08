@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Danyell Sedrick’s Photography</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luxury photography and photo booth services by Danyell Sedrick’s Photography.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +12,11 @@
 <header>
   <nav class="nav">
     <a href="index.html" class="logo">
-      <img src="images/ds.jpeg" alt="Logo">
+      <img src="images/ds.jpeg" alt="Danyell Sedrick’s Photography logo">
     </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="photobooth.html">Photo Booth</a>
@@ -23,17 +27,109 @@
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <h1>Luxury Images. Timeless Moments.</h1>
-    <p>Cinematic photography for graduations, families, creatives, and weddings.</p>
-    <div class="hero-actions">
-      <a href="portfolio.html" class="btn">View Portfolio</a>
-      <a href="book-photography.html" class="btn-outline">Book a Session</a>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Danyell Sedrick’s Photography</p>
+        <h1>Luxury images for unforgettable moments.</h1>
+        <p class="hero-sub">
+          Cinematic, golden-hour inspired photography and a high-end photo booth experience
+          for graduations, families, creatives, and weddings.
+        </p>
+        <div class="hero-actions">
+          <a href="portfolio.html" class="btn">View Portfolio</a>
+          <a href="book-photography.html" class="btn-outline">Book a Session</a>
+        </div>
+        <div class="hero-meta">
+          <span>Graduation · Family · Creative · Wedding</span>
+        </div>
+      </div>
+
+      <div class="hero-gallery-mosaic reveal">
+        <div class="mosaic-row">
+          <div class="mosaic-card tall">
+            <img src="images/creative1.jpg" alt="Creative portrait">
+          </div>
+          <div class="mosaic-card">
+            <img src="images/graduation1.jpg" alt="Graduation portrait">
+          </div>
+        </div>
+        <div class="mosaic-row">
+          <div class="mosaic-card">
+            <img src="images/family1.jpg" alt="Family session">
+          </div>
+          <div class="mosaic-card wide">
+            <img src="images/wedding1.jpg" alt="Wedding moment">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- COLLECTIONS PREVIEW -->
+  <section class="section section-center reveal">
+    <h2>Signature Collections</h2>
+    <p class="section-lead">
+      Curated sessions designed to feel effortless, elevated, and deeply personal.
+    </p>
+    <div class="feature-grid">
+      <a href="graduation.html" class="feature-card">
+        <h3>Graduation</h3>
+        <p>Celebrate your milestone with editorial-inspired portraits that feel like the cover of a magazine.</p>
+      </a>
+      <a href="family.html" class="feature-card">
+        <h3>Family</h3>
+        <p>Story-driven sessions that capture connection, laughter, and the in-between moments you’ll treasure.</p>
+      </a>
+      <a href="creative.html" class="feature-card">
+        <h3>Creative</h3>
+        <p>Bold, conceptual imagery for artists, entrepreneurs, and brands ready to stand out.</p>
+      </a>
+      <a href="wedding.html" class="feature-card">
+        <h3>Wedding</h3>
+        <p>From quiet getting-ready moments to the energy of the dance floor—documented with intention.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- PHOTO BOOTH PROMO -->
+  <section class="section section-alt reveal">
+    <div class="section-inner two-column">
+      <div>
+        <h2>Elevated Photo Booth Experience</h2>
+        <p class="section-lead">
+          A modern booth with flattering lighting, curated props, and instant keepsakes your guests will love.
+        </p>
+        <ul class="booth-list">
+          <li>Instant prints + digital gallery</li>
+          <li>Styled backdrops and on-brand overlays</li>
+          <li>Attendant on site for a seamless experience</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="photobooth.html" class="btn-outline">Learn More</a>
+          <a href="book-photobooth.html" class="btn">Book Photo Booth</a>
+        </div>
+      </div>
+      <div class="booth-hero-media">
+        <img src="images/photobooth.jpg" alt="Photo booth setup">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip reveal">
+    <div class="cta-inner">
+      <p>Ready to plan your session?</p>
+      <div class="cta-actions">
+        <a href="book-photography.html" class="btn small">Book Photography</a>
+        <a href="book-photobooth.html" class="btn-outline small">Book Photo Booth</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
   <p>© <span id="year"></span> Danyell Sedrick’s Photography</p>

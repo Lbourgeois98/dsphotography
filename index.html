@@ -14,7 +14,6 @@
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
-        <!-- Replace logo.png with your logo filename if different -->
         <img src="images/logo.png" alt="Danyell Sedrick's Photography logo">
       </div>
       <nav class="main-nav">
@@ -29,7 +28,8 @@
   </header>
 
   <main>
-    <!-- Hero -->
+
+    <!-- HERO -->
     <section id="hero" class="hero">
       <div class="container hero-content">
         <div>
@@ -41,13 +41,12 @@
           </div>
         </div>
         <div class="hero-photo">
-          <!-- Replace with one of your best photos -->
           <img src="images/hero-sample.jpg" alt="Sample photography">
         </div>
       </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="section">
       <div class="container">
         <div class="section-header">
@@ -65,98 +64,75 @@
         </div>
 
         <div class="portfolio-grid">
-          <!-- Replace sample images and categories with your real files -->
-          <div class="portfolio-item" data-category="portraits">
-            <img src="images/portrait1.jpg" alt="Portrait session">
-          </div>
-          <div class="portfolio-item" data-category="couples">
-            <img src="images/couples1.jpg" alt="Couples session">
-          </div>
-          <div class="portfolio-item" data-category="family">
-            <img src="images/family1.jpg" alt="Family session">
-          </div>
-          <div class="portfolio-item" data-category="events">
-            <img src="images/event1.jpg" alt="Event photography">
-          </div>
-          <div class="portfolio-item" data-category="creative">
-            <img src="images/creative1.jpg" alt="Creative photography">
-          </div>
-          <div class="portfolio-item" data-category="portraits">
-            <img src="images/portrait2.jpg" alt="Portrait session">
-          </div>
+          <div class="portfolio-item" data-category="portraits"><img src="images/portrait1.jpg"></div>
+          <div class="portfolio-item" data-category="couples"><img src="images/couples1.jpg"></div>
+          <div class="portfolio-item" data-category="family"><img src="images/family1.jpg"></div>
+          <div class="portfolio-item" data-category="events"><img src="images/event1.jpg"></div>
+          <div class="portfolio-item" data-category="creative"><img src="images/creative1.jpg"></div>
         </div>
       </div>
     </section>
 
-    <!-- Photo Booth -->
+    <!-- PHOTO BOOTH -->
     <section id="photo-booth" class="section alt">
       <div class="container two-column">
         <div>
           <h2>Photo Booth Experience</h2>
           <p>
             Bring the fun to your event with my fully equipped photo booth. Perfect for weddings,
-            parties, and corporate events, it delivers instant keepsakes your guests will love.
+            parties, and corporate events.
           </p>
           <ul class="booth-list">
-            <li>High-quality prints and digital copies</li>
+            <li>High-quality prints & digital copies</li>
             <li>Fun props and backdrops</li>
-            <li>Attendant setup and support</li>
+            <li>Attendant setup & support</li>
           </ul>
           <a href="#booking" class="btn primary">Book the Photo Booth</a>
         </div>
         <div class="booth-image-wrapper">
-          <!-- You can replace this with your real booth photo or an exported image from your link -->
-          <img src="images/photobooth.jpg" alt="Photo booth setup">
+          <img src="images/photobooth.jpg" alt="Photo booth">
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container two-column">
         <div>
           <h2>About Danyell</h2>
-          <p>
-            I’m Danyell Sedrick, a photographer passionate about capturing genuine emotion, rich
-            details, and the unique stories behind every client.
-          </p>
-          <p>
-            Whether it’s a portrait session, a family milestone, or a once-in-a-lifetime event,
-            my goal is to create images that feel timeless and luxurious, yet deeply personal.
-          </p>
+          <p>I’m Danyell Sedrick, a photographer passionate about capturing genuine emotion and timeless imagery.</p>
+          <p>I specialize in luxury portraits, family sessions, events, and creative editorials.</p>
         </div>
         <div class="about-photo">
-          <!-- Optionally add your portrait here -->
           <img src="images/danyell.jpg" alt="Danyell Sedrick">
         </div>
       </div>
     </section>
 
-    <!-- Booking / Contact Form -->
+    <!-- BOOKING FORM WITH FORMSPREE -->
     <section id="booking" class="section alt">
       <div class="container">
         <div class="section-header">
           <h2>Book a Session</h2>
-          <p>Tell me about your session and I’ll get back to you with details and availability.</p>
+          <p>Fill out the form and I’ll reply with availability and pricing.</p>
         </div>
 
-        <!-- Netlify form -->
-        <form name="booking" method="POST" data-netlify="true" class="booking-form">
-          <input type="hidden" name="form-name" value="booking" />
+        <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="booking-form">
           <div class="form-row">
             <div class="form-field">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" required>
+              <input id="name" name="name" required>
             </div>
             <div class="form-field">
               <label for="email">Email</label>
               <input id="email" name="email" type="email" required>
             </div>
           </div>
+
           <div class="form-row">
             <div class="form-field">
               <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel">
+              <input id="phone" name="phone">
             </div>
             <div class="form-field">
               <label for="session-type">Type of Session</label>
@@ -170,38 +146,41 @@
               </select>
             </div>
           </div>
+
           <div class="form-row">
             <div class="form-field">
               <label for="date">Preferred Date(s)</label>
-              <input id="date" name="date" type="text" placeholder="e.g. June 15 or any weekend in July">
+              <input id="date" name="date">
             </div>
           </div>
+
           <div class="form-row">
             <div class="form-field full-width">
               <label for="message">Message / Details</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me about your vision…"></textarea>
+              <textarea id="message" name="message" rows="5"></textarea>
             </div>
           </div>
+
           <button type="submit" class="btn primary">Send Request</button>
         </form>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-header">
           <h2>Contact</h2>
-          <p>Prefer to reach out directly? I’d love to hear from you.</p>
+          <p>You can reach me anytime.</p>
         </div>
         <div class="contact-details">
-          <!-- Replace with your real info -->
           <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
           <p><strong>Instagram:</strong> <a href="#" target="_blank">@yourhandle</a></p>
           <p><strong>Location:</strong> Your City, State</p>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">

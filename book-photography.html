@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header>
   <nav class="nav">
-    <a href="index.html" class="logo">Danyell Sedrick’s Photography</a>
+    <a href="index.html" class="logo">
+      <img src="images/ds.jpeg" alt="Logo">
+    </a>
     <div class="nav-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="photobooth.html">Photo Booth</a>
@@ -22,28 +25,26 @@
 
 <section class="section section-center">
   <h1>Book a Photography Session</h1>
-  <p>Tell me about your session and I’ll follow up with details, pricing, and availability.</p>
 
   <form action="https://formspree.io/f/PHOTOGRAPHY_PLACEHOLDER" method="POST" class="form">
     <input name="name" placeholder="Your Name" required>
     <input name="email" type="email" placeholder="Email" required>
-    <input name="phone" placeholder="Phone (optional)">
     <select name="session-type" required>
-      <option value="">Session Type</option>
+      <option value="">Choose session</option>
       <option>Graduation</option>
       <option>Family</option>
       <option>Creative</option>
       <option>Wedding</option>
     </select>
     <input name="preferred-date" placeholder="Preferred Date(s)">
-    <textarea name="message" placeholder="Tell me about your vision…" rows="5"></textarea>
-    <button type="submit" class="btn">Submit Request</button>
+    <textarea name="message" placeholder="Describe your vision…" rows="5"></textarea>
+    <button type="submit" class="btn">Submit</button>
   </form>
 </section>
 
 <footer>
-  <p>© <span id="year"></span> Danyell Sedrick’s Photography. All rights reserved.</p>
+  <p>© <span id="year"></span> Danyell Sedrick’s Photography</p>
 </footer>
-<script src="script.js"></script>
+
 </body>
 </html>

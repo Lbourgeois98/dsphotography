@@ -1,194 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Danyell Sedrick's Photography</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Luxury photography and photo booth services by Danyell Sedrick." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Danyell Sedrick’s Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luxury photography and photo booth services by Danyell Sedrick’s Photography.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="images/logo.png" alt="Danyell Sedrick's Photography logo">
-      </div>
-      <nav class="main-nav">
-        <a href="#hero">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#photo-booth">Photo Booth</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#booking" class="nav-cta">Book Now</a>
-      </nav>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">Danyell Sedrick’s Photography</a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="photobooth.html">Photo Booth</a>
+      <a href="book-photography.html">Book Photography</a>
+      <a href="book-photobooth.html">Book Photo Booth</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main>
-
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="container hero-content">
-        <div>
-          <h1>Luxury Photography by Danyell Sedrick</h1>
-          <p>Capturing timeless portraits, heartfelt moments, and unforgettable events with a cinematic, golden touch.</p>
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn primary">View Portfolio</a>
-            <a href="#booking" class="btn outline">Book a Session</a>
-          </div>
-        </div>
-        <div class="hero-photo">
-          <img src="images/hero-sample.jpg" alt="Sample photography">
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Portfolio</h2>
-          <p>Explore my work by category.</p>
-        </div>
-
-        <div class="portfolio-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="portraits">Portraits</button>
-          <button class="filter-btn" data-filter="couples">Couples</button>
-          <button class="filter-btn" data-filter="family">Family</button>
-          <button class="filter-btn" data-filter="events">Events</button>
-          <button class="filter-btn" data-filter="creative">Creative</button>
-        </div>
-
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-category="portraits"><img src="images/portrait1.jpg"></div>
-          <div class="portfolio-item" data-category="couples"><img src="images/couples1.jpg"></div>
-          <div class="portfolio-item" data-category="family"><img src="images/family1.jpg"></div>
-          <div class="portfolio-item" data-category="events"><img src="images/event1.jpg"></div>
-          <div class="portfolio-item" data-category="creative"><img src="images/creative1.jpg"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PHOTO BOOTH -->
-    <section id="photo-booth" class="section alt">
-      <div class="container two-column">
-        <div>
-          <h2>Photo Booth Experience</h2>
-          <p>
-            Bring the fun to your event with my fully equipped photo booth. Perfect for weddings,
-            parties, and corporate events.
-          </p>
-          <ul class="booth-list">
-            <li>High-quality prints & digital copies</li>
-            <li>Fun props and backdrops</li>
-            <li>Attendant setup & support</li>
-          </ul>
-          <a href="#booking" class="btn primary">Book the Photo Booth</a>
-        </div>
-        <div class="booth-image-wrapper">
-          <img src="images/photobooth.jpg" alt="Photo booth">
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div>
-          <h2>About Danyell</h2>
-          <p>I’m Danyell Sedrick, a photographer passionate about capturing genuine emotion and timeless imagery.</p>
-          <p>I specialize in luxury portraits, family sessions, events, and creative editorials.</p>
-        </div>
-        <div class="about-photo">
-          <img src="images/danyell.jpg" alt="Danyell Sedrick">
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING FORM WITH FORMSPREE -->
-    <section id="booking" class="section alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Book a Session</h2>
-          <p>Fill out the form and I’ll reply with availability and pricing.</p>
-        </div>
-
-        <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="booking-form">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input id="name" name="name" required>
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone">
-            </div>
-            <div class="form-field">
-              <label for="session-type">Type of Session</label>
-              <select id="session-type" name="session-type">
-                <option>Portraits</option>
-                <option>Couples</option>
-                <option>Family</option>
-                <option>Events</option>
-                <option>Creative</option>
-                <option>Photo Booth</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-field">
-              <label for="date">Preferred Date(s)</label>
-              <input id="date" name="date">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-field full-width">
-              <label for="message">Message / Details</label>
-              <textarea id="message" name="message" rows="5"></textarea>
-            </div>
-          </div>
-
-          <button type="submit" class="btn primary">Send Request</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>You can reach me anytime.</p>
-        </div>
-        <div class="contact-details">
-          <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
-          <p><strong>Instagram:</strong> <a href="#" target="_blank">@yourhandle</a></p>
-          <p><strong>Location:</strong> Your City, State</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Danyell Sedrick's Photography. All rights reserved.</p>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <h1>Luxury Images. Timeless Moments.</h1>
+    <p>Cinematic, golden-hour inspired photography for graduations, families, creatives, and weddings.</p>
+    <div class="hero-actions">
+      <a href="portfolio.html" class="btn">View Portfolio</a>
+      <a href="book-photography.html" class="btn-outline">Book a Session</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="section section-center">
+  <h2>Featured Services</h2>
+  <div class="feature-grid">
+    <a href="portfolio.html" class="feature-card">
+      <h3>Photography Sessions</h3>
+      <p>Graduation, family, creative, and wedding portraits with a luxury finish.</p>
+    </a>
+    <a href="photobooth.html" class="feature-card">
+      <h3>Photo Booth</h3>
+      <p>Perfect for weddings and events—props, instant prints, and memories.</p>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Danyell Sedrick’s Photography. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

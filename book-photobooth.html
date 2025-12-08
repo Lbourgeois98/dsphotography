@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Photo Booth – Danyell Sedrick’s Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">Danyell Sedrick’s Photography</a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="photobooth.html">Photo Booth</a>
+      <a href="book-photography.html">Book Photography</a>
+      <a href="book-photobooth.html" class="active">Book Photo Booth</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section section-center">
+  <h1>Book the Photo Booth</h1>
+  <p>Share your event details and I’ll confirm availability and packages.</p>
+
+  <form action="https://formspree.io/f/PHOTOBOOTH_PLACEHOLDER" method="POST" class="form">
+    <input name="name" placeholder="Your Name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="phone" placeholder="Phone (optional)">
+    <input name="event-type" placeholder="Event Type (wedding, birthday, etc.)">
+    <input name="event-date" placeholder="Event Date">
+    <input name="event-location" placeholder="Event Location">
+    <textarea name="details" placeholder="Guest count, theme, timing, special requests…" rows="5"></textarea>
+    <button type="submit" class="btn">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Danyell Sedrick’s Photography. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

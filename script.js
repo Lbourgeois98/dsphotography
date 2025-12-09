@@ -21,11 +21,10 @@ if ("IntersectionObserver" in window && revealEls.length) {
 
   revealEls.forEach(el => observer.observe(el));
 } else {
-  // Fallback: show everything if IntersectionObserver isn't supported
   revealEls.forEach(el => el.classList.add("in-view"));
 }
 
-// Mobile navigation toggle
+// Mobile navigation toggle (only active on pages with .nav-toggle)
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 

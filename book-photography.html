@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book Photography – Danyell Sedrick’s Photography</title>
+  <title>Book a Photography Session – Danyell Sedrick’s Photography</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
   <nav class="nav">
     <a href="index.html" class="logo">
       <img src="images/ds.png" alt="Logo">
     </a>
-    <div class="nav-links">
-      <a href="portfolio.html">Portfolio</a>
-      <a href="photobooth.html">Photo Booth</a>
-      <a href="book-photography.html" class="active">Book Photography</a>
-      <a href="book-photobooth.html">Book Photo Booth</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-buttons">
+      <a href="portfolio.html" class="nav-btn">Portfolio</a>
+      <a href="photobooth.html" class="nav-btn">Magic Mirror Booth</a>
+      <a href="book-photography.html" class="nav-btn">Book Photography</a>
+      <a href="book-photobooth.html" class="nav-btn">Book Photo Booth</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
     </div>
   </nav>
 </header>
 
-<section class="section section-center">
-  <h1>Book a Photography Session</h1>
+<main>
+  <section class="section section-center reveal">
+    <h1>Book a Photography Session</h1>
+    <p class="section-lead">
+      Share a few details about what you’re dreaming of, and you’ll receive a response with
+      availability, pricing, and next steps.
+    </p>
+  </section>
 
-  <form action="https://formspree.io/f/PHOTOGRAPHY_PLACEHOLDER" method="POST" class="form">
-    <input name="name" placeholder="Your Name" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <select name="session-type" required>
-      <option value="">Choose session</option>
-      <option>Graduation</option>
-      <option>Family</option>
-      <option>Creative</option>
-      <option>Wedding</option>
-    </select>
-    <input name="preferred-date" placeholder="Preferred Date(s)">
-    <textarea name="message" placeholder="Describe your vision…" rows="5"></textarea>
-    <button type="submit" class="btn">Submit</button>
-  </form>
-</section>
+  <section class="section reveal">
+    <form class="form" method="POST" action="https://formspree.io/f/PHOTOGRAPHY_PLACEHOLDER">
+      <label>Full Name
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Phone
+        <input type="tel" name="phone">
+      </label>
+      <label>Type of Session
+        <select name="session_type" required>
+          <option value="">Select one</option>
+          <option>Graduation</option>
+          <option>Family</option>
+          <option>Creative / Branding</option>
+          <option>Wedding</option>
+          <option>Prom</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Preferred Date or Timeframe
+        <input type="text" name="date">
+      </label>
+      <label>Tell me about your vision
+        <textarea name="details" placeholder="Location ideas, outfits, overall vibe…"></textarea>
+      </label>
+      <button type="submit" class="btn">Submit Inquiry</button>
+    </form>
+  </section>
+</main>
 
 <footer>
   <p>© <span id="year"></span> Danyell Sedrick’s Photography</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

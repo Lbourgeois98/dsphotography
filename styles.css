@@ -179,13 +179,6 @@ header {
   margin-bottom: 1rem;
 }
 
-.hero-meta span {
-  font-size: 0.78rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 /* HERO MOSAIC */
 
 .hero-gallery-mosaic {
@@ -351,6 +344,11 @@ header {
   font-size: 0.9rem;
 }
 
+.feature-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
 .feature-card:hover,
 .category-card:hover {
   border-color: var(--accent);
@@ -386,7 +384,7 @@ header {
   background: rgba(0,0,0,0.7);
 }
 
-/* GALLERY (used on other pages) */
+/* GALLERY (other pages) */
 
 .gallery {
   max-width: var(--max-width);
@@ -403,7 +401,7 @@ header {
   object-fit: cover;
 }
 
-/* PHOTO BOOTH LAYOUT */
+/* MAGIC MIRROR LIST */
 
 .two-column {
   display: grid;
@@ -419,15 +417,39 @@ header {
   color: var(--muted);
 }
 
-.booth-list li::before {
-  content: "✶";
+.booth-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.icon-gold {
   color: var(--accent);
-  margin-right: 0.5rem;
+  margin-right: 0.55rem;
+  font-size: 1rem;
 }
 
 .booth-hero-media img {
   border-radius: var(--radius);
   border: 1px solid var(--border);
+}
+
+/* HOW IT WORKS CARD */
+
+.how-card {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: radial-gradient(circle at top, #18120a 0, #050505 60%, #000 100%);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  border: 1px solid var(--accent-soft);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.95);
+}
+
+.how-img {
+  width: 100%;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 /* EXPERIENCE STEPS */
@@ -447,12 +469,8 @@ header {
   padding: 1.5rem 1.4rem;
 }
 
-.step-number {
-  display: inline-block;
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
+.step-icon {
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 

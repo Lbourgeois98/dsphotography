@@ -1,6 +1,6 @@
-/* -------------------------------------- */
+/* ------------------------ */
 /* GLOBAL THEME */
-/* -------------------------------------- */
+/* ------------------------ */
 
 :root {
   --bg: #ffffff;
@@ -20,7 +20,7 @@ body {
   color: var(--text);
 }
 
-/* Remove all default link colors */
+/* Remove default link colors everywhere */
 a, a:visited, a:active, a:hover {
   color: inherit !important;
   text-decoration: none !important;
@@ -32,9 +32,9 @@ img {
   display: block;
 }
 
-/* -------------------------------------- */
+/* ------------------------ */
 /* NAVIGATION */
-/* -------------------------------------- */
+/* ------------------------ */
 
 header {
   background: rgba(255,255,255,0.9);
@@ -56,9 +56,10 @@ header {
 
 .logo img {
   height: 54px;
+  width: auto;
 }
 
-/* Navigation Buttons */
+/* Navigation buttons */
 .nav-buttons {
   display: flex;
   gap: 0.75rem;
@@ -78,12 +79,12 @@ header {
 
 .nav-btn:hover {
   background: var(--accent);
-  color: white !important;
+  color: #fff !important;
 }
 
-/* -------------------------------------- */
-/* SECTIONS */
-/* -------------------------------------- */
+/* ------------------------ */
+/* GENERIC SECTIONS */
+/* ------------------------ */
 
 .section {
   padding: 3.5rem 1.5rem;
@@ -93,6 +94,11 @@ header {
   text-align: center;
 }
 
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 .section-lead {
   max-width: 620px;
   margin: 0.75rem auto 2.25rem;
@@ -100,12 +106,17 @@ header {
   line-height: 1.6;
 }
 
-/* -------------------------------------- */
+/* ------------------------ */
 /* HERO */
-/* -------------------------------------- */
+/* ------------------------ */
+
+.brand-logo-wrap {
+  max-width: 260px;
+  margin: 2.5rem auto 1rem;
+}
 
 .hero {
-  padding: 3rem 1.5rem 4rem;
+  padding: 0 1.5rem 3.5rem;
 }
 
 .hero-inner {
@@ -150,19 +161,23 @@ header {
 
 .btn {
   background: var(--accent);
-  color: white !important;
+  color: #fff !important;
   border: none;
 }
 
 .btn-outline {
   border: 1px solid var(--accent);
   color: var(--accent) !important;
-  background: white;
+  background: #fff;
 }
 
-/* -------------------------------------- */
-/* FEATURE CARDS (Signature Collections) */
-/* -------------------------------------- */
+.small {
+  font-size: 0.75rem;
+}
+
+/* ------------------------ */
+/* SIGNATURE COLLECTIONS / FEATURE CARDS */
+/* ------------------------ */
 
 .feature-grid {
   max-width: var(--max-width);
@@ -182,7 +197,7 @@ header {
 
 .feature-card:hover {
   border-color: var(--accent);
-  background: white;
+  background: #fff;
 }
 
 .feature-card h3 {
@@ -196,13 +211,13 @@ header {
   color: var(--muted);
 }
 
-/* -------------------------------------- */
+/* ------------------------ */
 /* PORTFOLIO GALLERY */
-/* -------------------------------------- */
+/* ------------------------ */
 
 .gallery {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.2rem;
@@ -210,11 +225,12 @@ header {
 
 .gallery img {
   width: 100%;
-  height: 300px;
+  height: 280px;
   object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: 0.25s ease;
+  cursor: pointer;
 }
 
 .gallery img:hover {
@@ -222,9 +238,78 @@ header {
   border-color: var(--accent);
 }
 
-/* -------------------------------------- */
-/* CTA */
-/* -------------------------------------- */
+/* ------------------------ */
+/* MAGIC MIRROR SECTION */
+/* ------------------------ */
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+.booth-list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* HOW IT WORKS IMAGE */
+
+.how-card img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* ------------------------ */
+/* FORMS */
+/* ------------------------ */
+
+.form {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form label {
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: #fff;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ------------------------ */
+/* CTA STRIP */
+/* ------------------------ */
 
 .cta-strip {
   background: var(--bg-soft);
@@ -235,19 +320,56 @@ header {
 .cta-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.7rem;
+  padding: 1.7rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.small {
-  font-size: 0.75rem;
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
-/* -------------------------------------- */
-/* ANIMATIONS */
-/* -------------------------------------- */
+/* ------------------------ */
+/* LIGHTBOX */
+/* ------------------------ */
+
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.lightbox-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  border: 4px solid #fff;
+}
+
+/* ------------------------ */
+/* REVEAL ANIMATION */
+/* ------------------------ */
 
 .reveal {
   opacity: 0;
@@ -258,4 +380,41 @@ header {
 .reveal.in-view {
   opacity: 1;
   transform: none;
+}
+
+/* ------------------------ */
+/* RESPONSIVE */
+/* ------------------------ */
+
+@media (max-width: 900px) {
+  .hero-inner,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-bottom: 3rem;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-inner {
+    gap: 1.6rem;
+  }
 }

@@ -3,14 +3,13 @@
   --bg-soft: #f8f8f8;
   --text: #1f1f1f;
   --muted: #6c6c6c;
-  --accent: #c6a23a;         /* Gold */
-  --accent-light: #f2d787;
+  --accent: #c6a23a;
   --border: #e3e3e3;
   --radius: 12px;
   --max-width: 1080px;
 }
 
-/* GLOBAL */
+/* GLOBAL RESET */
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
@@ -18,7 +17,16 @@ body {
   color: var(--text);
 }
 
-img { max-width: 100%; display: block; }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* REMOVE BLUE AND PURPLE LINK COLORS */
+a, a:visited, a:hover, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
 /* NAVIGATION */
 header {
@@ -64,10 +72,10 @@ header {
 
 .nav-btn:hover {
   background: var(--accent);
-  color: #fff;
+  color: #fff !important;
 }
 
-/* CENTER LOGO */
+/* LOGO SECTION */
 .brand-logo-wrap {
   max-width: 260px;
   margin: 2.5rem auto 1rem;
@@ -76,7 +84,6 @@ header {
 /* HERO */
 .hero {
   padding: 3rem 1.5rem 4rem;
-  background: var(--bg);
 }
 
 .hero-inner {
@@ -95,10 +102,11 @@ header {
 
 .hero-sub {
   color: var(--muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
+/* BUTTONS */
 .btn,
 .btn-outline {
   padding: 0.75rem 1.4rem;
@@ -107,18 +115,17 @@ header {
   font-size: 0.8rem;
   letter-spacing: 0.13em;
   margin-right: 0.6rem;
-  cursor: pointer;
 }
 
 .btn {
   background: var(--accent);
-  color: #fff;
+  color: #fff !important;
   border: none;
 }
 
 .btn-outline {
   border: 1px solid var(--accent);
-  color: var(--accent);
+  color: var(--accent) !important;
   background: white;
 }
 
@@ -127,7 +134,9 @@ header {
   padding: 3rem 1.5rem;
 }
 
-.section-center { text-align: center; }
+.section-center {
+  text-align: center;
+}
 
 .section-lead {
   max-width: 600px;
@@ -145,14 +154,27 @@ header {
 
 .feature-card {
   background: var(--bg-soft);
+  padding: 1.8rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 1.8rem;
-  transition: 0.15s ease;
+  transition: 0.2s ease;
+  cursor: default;
 }
 
 .feature-card:hover {
   border-color: var(--accent);
+  background: #fff;
+}
+
+.feature-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 /* MAGIC MIRROR SECTION */
@@ -191,9 +213,11 @@ header {
   align-items: center;
 }
 
-.small { font-size: 0.75rem; }
+.small {
+  font-size: 0.75rem;
+}
 
-/* ANIMATIONS */
+/* ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(20px);

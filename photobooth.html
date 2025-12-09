@@ -2,49 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photo Booth – Danyell Sedrick’s Photography</title>
+  <title>Magic Mirror Photo Booth – Danyell Sedrick’s Photography</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
   <nav class="nav">
     <a href="index.html" class="logo">
       <img src="images/ds.png" alt="Logo">
     </a>
-    <div class="nav-links">
-      <a href="portfolio.html">Portfolio</a>
-      <a href="photobooth.html" class="active">Photo Booth</a>
-      <a href="book-photography.html">Book Photography</a>
-      <a href="book-photobooth.html">Book Photo Booth</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-buttons">
+      <a href="portfolio.html" class="nav-btn">Portfolio</a>
+      <a href="photobooth.html" class="nav-btn">Magic Mirror Booth</a>
+      <a href="book-photography.html" class="nav-btn">Book Photography</a>
+      <a href="book-photobooth.html" class="nav-btn">Book Photo Booth</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
     </div>
   </nav>
 </header>
 
-<section class="section">
-  <h1>Photo Booth Experience</h1>
-  <p>Perfect for weddings, birthdays, and events.</p>
+<main>
+  <section class="section section-center reveal">
+    <h1>Magic Mirror Photo Booth</h1>
+    <p class="section-lead">
+      A full-length interactive mirror booth that blends clean design with high-end technology —
+      giving your guests an experience they’ll talk about long after the event.
+    </p>
+  </section>
 
-  <div class="photobooth-layout">
-    <div>
-      <ul class="booth-list">
-        <li>Instant prints</li>
-        <li>Props & backdrops</li>
-        <li>On-site attendant</li>
-      </ul>
-      <a href="book-photobooth.html" class="btn">Book Photo Booth</a>
+  <section class="section reveal">
+    <div class="section-inner two-column">
+      <div>
+        <h2>What You Get</h2>
+        <ul class="booth-list">
+          <li>Full-length touch-screen mirror with animations and prompts</li>
+          <li>Guided posing, countdowns, and interactive effects</li>
+          <li>Professional DSLR camera and flattering LED lighting</li>
+          <li>Custom-designed templates and overlays to match your event</li>
+          <li>Instant digital gallery plus optional on-site prints</li>
+          <li>Professional attendant to set up, assist guests, and break down</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="book-photobooth.html" class="btn">Book the Magic Mirror</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/family3.jpg" alt="Magic Mirror setup">
+      </div>
     </div>
-    <div>
-      <img src="images/photobooth.jpg" class="full-img">
+  </section>
+
+  <section class="section section-center reveal">
+    <div class="how-card">
+      <img src="images/photobooth.jpg" alt="How It Works graphic">
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <p>© <span id="year"></span> Danyell Sedrick’s Photography</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

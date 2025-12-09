@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Graduation – Danyell Sedrick’s Photography</title>
+  <title>Graduation Portfolio – Danyell Sedrick’s Photography</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,32 +13,47 @@
     <a href="index.html" class="logo">
       <img src="images/ds.png" alt="Logo">
     </a>
-    <div class="nav-links">
-      <a href="portfolio.html" class="active">Portfolio</a>
-      <a href="photobooth.html">Photo Booth</a>
-      <a href="book-photography.html">Book Photography</a>
-      <a href="book-photobooth.html">Book Photo Booth</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-buttons">
+      <a href="portfolio.html" class="nav-btn">Portfolio</a>
+      <a href="photobooth.html" class="nav-btn">Magic Mirror Booth</a>
+      <a href="book-photography.html" class="nav-btn">Book Photography</a>
+      <a href="book-photobooth.html" class="nav-btn">Book Photo Booth</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
     </div>
   </nav>
 </header>
 
-<section class="section">
-  <h1>Graduation</h1>
-  <div class="gallery">
-    <img src="images/graduation1.jpg">
-    <img src="images/graduation2.jpg">
-    <img src="images/graduation3.jpg">
-  </div>
+<main>
+  <section class="section section-center reveal">
+    <h1>Graduation</h1>
+    <p class="section-lead">
+      Celebrating your hard work with bright, confident, and personality-filled senior portraits.
+    </p>
+  </section>
 
-  <div class="section-center">
-    <a href="book-photography.html" class="btn">Book Graduation Session</a>
-  </div>
-</section>
+  <section class="section reveal">
+    <div class="gallery">
+      <img src="images/graduation1.jpg" alt="Graduation image 1">
+      <img src="images/graduation2.jpg" alt="Graduation image 2">
+      <img src="images/graduation3.jpg" alt="Graduation image 3">
+      <img src="images/graduation4.jpg" alt="Graduation image 4">
+    </div>
+  </section>
+
+  <section class="cta-strip reveal">
+    <div class="cta-inner">
+      <p>Ready to plan your graduation session?</p>
+      <div class="cta-actions">
+        <a href="book-photography.html" class="btn small">Book Graduation</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
   <p>© <span id="year"></span> Danyell Sedrick’s Photography</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
